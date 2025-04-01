@@ -13,9 +13,15 @@ import matplotlib.pyplot as plt
 
 #1
 
-T = np.array([[2, 0], [0, 2]])
-t = np.array([[0.5, 0], [0, 0.5]])
+T = np.array([[2, 0], [0, 3]])
+t = np.array([[0.5, 0], [0, 1/3]])
 
-print (T @ t)
+w = 2
+z = 3 
+
+f =np.array[[w], [z]]
+
+I = T @ t
+x = T @ f
 
  
