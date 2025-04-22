@@ -347,7 +347,7 @@ plt.axis('off')
 
 plt.show()
 
-"""
+
 page_rank = {
     15 : [0.006458, 0.003866, 0.010792, 0.018291],
     18 : [0.009967, 0.021280, 0.019525, 0.016743],
@@ -359,6 +359,150 @@ page_rank = {
     124: [0.018835, 0.019692, 0.019307, 0.018665], 
     125: [0.003823, 0.023529, 0.021614, 0.016571], 
     135: [0.010620, 0.020145,  0.019525, 0.018338]	
+    
+    }
+"""
+
+ #ahora veamos cuando varia alpha:
+    
+
+ASeisSeptimos = construye_adyacencia(D,5) # Construimos la matriz de adyacencia
+
+page_Rankalpha1 = calcula_pagerank(ASeisSeptimos, 6/7)
+page_Rankalpha1 = page_Rankalpha1 / np.sum(page_Rankalpha1)
+
+#print (page_Rankalpha1)
 
 
-}
+
+ACuatroQuintos = construye_adyacencia(D,5) # Construimos la matriz de adyacencia
+
+page_Rankalpha2 = calcula_pagerank(ACuatroQuintos, 4/5)
+page_Rankalpha2 = page_Rankalpha2 / np.sum(page_Rankalpha2)
+
+#print (page_Rankalpha2)
+
+ADosTercios = construye_adyacencia(D,5) # Construimos la matriz de adyacencia
+
+page_Rankalpha3 = calcula_pagerank(ADosTercios, 2/3)
+page_Rankalpha3 = page_Rankalpha3 / np.sum(page_Rankalpha3)
+
+#print (page_Rankalpha3) 
+
+
+AUnMedio = construye_adyacencia(D,5) # Construimos la matriz de adyacencia
+
+page_Rankalpha4 = calcula_pagerank(AUnMedio, 1/2)
+page_Rankalpha4 = page_Rankalpha4 / np.sum(page_Rankalpha4)
+
+#print (page_Rankalpha4) 
+
+AUnTercio = construye_adyacencia(D,5) # Construimos la matriz de adyacencia
+
+page_Rankalpha5 = calcula_pagerank(AUnTercio, 1/3)
+page_Rankalpha5 = page_Rankalpha5 / np.sum(page_Rankalpha5)
+
+#print (page_Rankalpha5) 
+
+AUnQuinto = construye_adyacencia(D,5) # Construimos la matriz de adyacencia
+
+page_Rankalpha6 = calcula_pagerank(AUnQuinto, 1/5)
+page_Rankalpha6 = page_Rankalpha6 / np.sum(page_Rankalpha6)
+
+#print (page_Rankalpha6) 
+
+AUnSeptimo = construye_adyacencia(D,5) # Construimos la matriz de adyacencia
+
+page_Rankalpha7 = calcula_pagerank(AUnSeptimo, 1/7)
+page_Rankalpha7 = page_Rankalpha7 / np.sum(page_Rankalpha7)
+
+#print (page_Rankalpha7) 
+
+listaDieciocho : list = []
+listaDieciocho.append(float(page_Rankalpha7[18]))
+listaDieciocho.append(float(page_Rankalpha6[18]))
+listaDieciocho.append(float(page_Rankalpha5[18]))
+listaDieciocho.append(float(page_Rankalpha4[18]))
+listaDieciocho.append(float(page_Rankalpha3[18]))
+listaDieciocho.append(float(page_Rankalpha2[18]))
+listaDieciocho.append(float(page_Rankalpha1[18])) 
+
+
+listaDieciocho = [round(x, 6) for x in listaDieciocho]
+#print(listaDieciocho) 
+
+listaNOVENTAYTRES : list = []
+listaNOVENTAYTRES.append(float(page_Rankalpha7[93]))
+listaNOVENTAYTRES.append(float(page_Rankalpha6[93]))
+listaNOVENTAYTRES.append(float(page_Rankalpha5[93]))
+listaNOVENTAYTRES.append(float(page_Rankalpha4[93]))
+listaNOVENTAYTRES.append(float(page_Rankalpha3[93]))
+listaNOVENTAYTRES.append(float(page_Rankalpha2[93]))
+listaNOVENTAYTRES.append(float(page_Rankalpha1[93])) 
+
+
+listaNOVENTAYTRES = [round(x, 6) for x in listaNOVENTAYTRES]
+#print(listaNOVENTAYTRES) 
+
+listaCIENTOSIETE : list = []
+listaCIENTOSIETE.append(float(page_Rankalpha7[107]))
+listaCIENTOSIETE.append(float(page_Rankalpha6[107]))
+listaCIENTOSIETE.append(float(page_Rankalpha5[107]))
+listaCIENTOSIETE.append(float(page_Rankalpha4[107]))
+listaCIENTOSIETE.append(float(page_Rankalpha3[107]))
+listaCIENTOSIETE.append(float(page_Rankalpha2[107]))
+listaCIENTOSIETE.append(float(page_Rankalpha1[107])) 
+
+
+listaCIENTOSIETE = [round(x, 6) for x in listaCIENTOSIETE]
+#print(listaCIENTOSIETE) 
+
+listaCIENTODIECISIETE : list = []
+listaCIENTODIECISIETE.append(float(page_Rankalpha7[117]))
+listaCIENTODIECISIETE.append(float(page_Rankalpha6[117]))
+listaCIENTODIECISIETE.append(float(page_Rankalpha5[117]))
+listaCIENTODIECISIETE.append(float(page_Rankalpha4[117]))
+listaCIENTODIECISIETE.append(float(page_Rankalpha3[117]))
+listaCIENTODIECISIETE.append(float(page_Rankalpha2[117]))
+listaCIENTODIECISIETE.append(float(page_Rankalpha1[117])) 
+
+
+listaCIENTODIECISIETE = [round(x, 6) for x in listaCIENTODIECISIETE]
+#print(listaCIENTODIECISIETE) 
+
+listaCIENTOVEINTICINCO : list = []
+listaCIENTOVEINTICINCO.append(float(page_Rankalpha7[125]))
+listaCIENTOVEINTICINCO.append(float(page_Rankalpha6[125]))
+listaCIENTOVEINTICINCO.append(float(page_Rankalpha5[125]))
+listaCIENTOVEINTICINCO.append(float(page_Rankalpha4[125]))
+listaCIENTOVEINTICINCO.append(float(page_Rankalpha3[125]))
+listaCIENTOVEINTICINCO.append(float(page_Rankalpha2[125]))
+listaCIENTOVEINTICINCO.append(float(page_Rankalpha1[125])) 
+
+
+listaCIENTOVEINTICINCO = [round(x, 6) for x in listaCIENTOVEINTICINCO]
+#print(listaCIENTOVEINTICINCO) 
+
+listaCIENTOTREINTAYCINCO : list = []
+listaCIENTOTREINTAYCINCO.append(float(page_Rankalpha7[135]))
+listaCIENTOTREINTAYCINCO.append(float(page_Rankalpha6[135]))
+listaCIENTOTREINTAYCINCO.append(float(page_Rankalpha5[135]))
+listaCIENTOTREINTAYCINCO.append(float(page_Rankalpha4[135]))
+listaCIENTOTREINTAYCINCO.append(float(page_Rankalpha3[135]))
+listaCIENTOTREINTAYCINCO.append(float(page_Rankalpha2[135]))
+listaCIENTOTREINTAYCINCO.append(float(page_Rankalpha1[135])) 
+
+
+listaCIENTOTREINTAYCINCO = [round(x, 6) for x in listaCIENTOTREINTAYCINCO]
+print(listaCIENTOTREINTAYCINCO) 
+
+
+
+
+
+
+
+    
+   
+
+
